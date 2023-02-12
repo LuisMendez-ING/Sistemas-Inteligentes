@@ -1,89 +1,103 @@
 body {
-	font-family: 'Montserrat', sans-serif;
-	margin: 0;
-	padding: 0;
-	text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 h1 {
-	font-size: 3em;
+  font-size: 3em;
 }
 
 table {
-	width: 75%;
-	margin: auto;
-	margin-top: 20px;
-	font-family: 'Arimo', sans-serif;
-	font-size: 70px;
+  width: 75%;
+  margin: auto;
+  margin-top: 30px;
+  font-family: "Arimo", sans-serif;
+  font-size: 70px;
 }
 
 td {
-	display: inline-block;
-	width: 80px;
-	height: 80px;
-	line-height: 80px;
-	color: white;
-	border: 3px solid black;
-	margin: 8px;
-	transition: background-color 0.2s ease;
-}
-
-td:hover {
-	cursor: pointer;
-	background-color: #FA6900;
+  display: inline-block;
+  background-color: #828282;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  color: white;
+  border: 3px solid black;
+  margin: 8px;
+  transition: background-color 0.8s ease;
 }
 
 .selected {
-	background-color: #FA6900;
+  background-color: #000000 !important;
 }
 
 tr {
-	list-style-type: none;
-	width: 500px;
+  list-style-type: none;
+  width: 500px;
 }
 
 #selection {
-	height: 60px;
-	font-size: 1.5em;
+  font-size: 1.5em;
+}
+
+#restart {
+  width: 100px;
+  display: none;
+}
+
+#restart:hover {
+  cursor: pointer;
+  background: #000000;
+  color: white;
 }
 
 button {
-	background: transparent;
-	width: 50px;
-	height: 50px;
-	margin: .3em;
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  margin: 0.3em;
 }
 
 .hover:hover {
-	background: #F38630;
-	color: white;
+  cursor: pointer;
+  background: #000000;
+  color: white;
 }
 
 :active {
-	outline: none;
+  outline: none;
 }
 
 :focus {
-	outline: none;
+  outline: none;
 }
 
 .seed {
-	background: #000000;
-	color: white;
+  background: #000000;
+  color: white;
 }
 
 #result {
-    margin-top: 20px;
-	padding-top: 20px;
-	height: 40px;
-	font-size: 1.5em;
+	display: none;
+  padding-top: 20px;
+  height: 40px;
+  width: 410px;
+  font-size: 1.5em;
+  margin-top: 10px;
+  color: white;
+  font-weight: bolder;
+  border-radius: 10px;
+  background-color: crimson;
 }
 
 @media only screen and (min-device-width: 1000px) {
-	td {
-		width: 120px;
-		height: 120px;
-		line-height: 120px;
-		font-size: 120px;
-	}
+  td {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    font-size: 120px;
+  }
 }
